@@ -4,7 +4,7 @@ import java.util.List;
 public class Main {
     private static final String AT_SYMBOL = "@";
     private static final String AT_MASKED = "@...";
-    private static final int INDEX_START = 0;
+    private static final int ZEZO = 0;
     private static final int INDEX_SHIFT = 1;
     private static final String BLANK = "";
 
@@ -21,7 +21,7 @@ public class Main {
             }
 
             int lastAtIndex = item.lastIndexOf(AT_SYMBOL);
-            String beforeLastAt = item.substring(INDEX_START, lastAtIndex).replaceAll(AT_SYMBOL, BLANK);
+            String beforeLastAt = item.substring(ZEZO, lastAtIndex).replaceAll(AT_SYMBOL, BLANK);
             String afterLastAt = item.substring(lastAtIndex + INDEX_SHIFT);
 
             // Nếu sau @ cuối cùng không còn gì -> giữ lại @
